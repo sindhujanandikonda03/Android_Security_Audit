@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <!-- TODO: maybe we don't need this! -->
+        <!--<item-->
+            <!--android:id="@+id/nav_home"-->
+            <!--android:icon="@drawable/ic_home_black_24dp"-->
+            <!--android:title="Home" />-->
+        <item
+            android:id="@+id/nav_passcode"
+            android:icon="@drawable/ic_lock_open_black_24dp"
+            android:title="Passcode" />
+        <item
+            android:id="@+id/nav_appscan"
+            android:icon="@drawable/ic_location_searching_black_24dp"
+            android:title="App Scan" />
+        <item
+            android:id="@+id/nav_connections"
+            android:icon="@drawable/ic_wifi_black_24dp"
+            android:title="Connections" />
+        <item
+            android:id="@+id/nav_othersettings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Other Settings" />
+    </group>
+
+    <item android:title="Help">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_info_black_24dp"
+                android:title="About" />
+        </menu>
+    </item>
+
+</menu>

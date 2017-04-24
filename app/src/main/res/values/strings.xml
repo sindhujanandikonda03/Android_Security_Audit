@@ -1,0 +1,94 @@
+<resources>
+
+    <!-- App globals -->
+    <string name="app_name">Security Enforcer</string>
+    <string name="app_slogan">Be Aware, Be Secure.</string>
+
+    <!-- Screens Labels -->
+    <string name="label_home_screen">Home</string>
+    <string name="label_passcode_screen">Passcode Settings</string>
+    <string name="label_appscan_screen">App Scan</string>
+    <string name="label_connections_screen">Connections</string>
+    <string name="label_othersettings_screen">Other Settings</string>
+    <string name="label_about_screen">About</string>
+
+    <!-- Home screen -->
+    <string name="home_textview_device_information">%1$s running Android %2$s</string>
+    <string name="home_textview_last_audit">Last scan app: %1$s</string>
+    <string name="home_textview_default_last_audit">No app scan has been performed!</string>
+    <string name="home_textview_connection_recommendations">Unsecured WiFi Connections:</string>
+    <string name="home_textview_camera_recommendations">Camera Status:</string>
+    <string name="home_textview_unknownsources_recommendations">Install from Unknown Sources:</string>
+    <string name="home_textview_encryption_recommendations">Device Storage Encryption:</string>
+    <string name="home_textview_apps_recommendations">Apps with Potentially Risky Permissions:</string>
+
+    <!-- Connections screen -->
+    <string name="connections_checkbox_title">Only connect to secure WiFis</string>
+    <string name="connections_savedconnections_title">Saved Connections</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Other Settings screen -->
+    <string name="othersettings_textview_unknown_sources">Install from unknown sources (read only)</string>
+    <string name="othersettings_textview_disable_cameras">Disable device camera(s)</string>
+    <string name="othersettings_textview_encrypt_device">Encrypt device</string>
+    <string name="othersettings_textview_encrypt_device_ro">Encrypt device (readonly)</string>
+
+    <!-- EnabledAdmin screen -->
+    <string name="enabledadmin_message">To use this app, you need to enable the device
+        administrator mode</string>
+    <string name="enabledadmin_buttontext">Enable Phone Administrator</string>
+    <string name="label_receiver">Security Enforcer</string>
+    <string name="description_receiver">The app needs to have administrator permissions in order
+    to be able to perform the operations needed to enforce security settings in your device</string>
+
+    <!-- About screen -->
+    <string name="about_textview_message"><b>Android Security</b> makes your device more secured
+    by enforcing the usage of a complex password with a minimum length as well as a maximum
+    timeout for locking the screen. At the same time, it makes recommendations on other settings such
+    as disabling cameras, encryption and disabling connections to open access points. Additionally,
+    the user is able scan the device to find potentially malicious apps.</string>
+    <string name="about_textview_version">Version 1.1</string>
+
+    <!-- Notifications -->
+    <string name="notification_title_disconnect_unsecured_wifi">Security Enforcer</string>
+    <string name="notification_message_disconnect_unsecured_wifi">Disconnected from unsecured WiFi</string>
+
+    <!-- Alerts -->
+    <string name="alert_deletion_network_title">Confirm Deletion</string>
+    <string name="alert_deletion_network_message">Are you sure you want to delete the %1$s network?</string>
+    <string name="alert_deletion_not_allowed_title">Connection Deletion Not Allowed</string>
+    <string name="alert_deletion_not_allowed_message">Device running Android version %1$s \nAndroid
+        doesn\'t allow the deletion of saved connections from Android 6.0 and later</string>
+    <string name="alert_encryption_unsupported_title">Encryption Unsupported</string>
+    <string name="alert_encryptiion_unsupported_message">Your device does not support storage encryption</string>
+    <string name="alert_encrypted_title">Device Already Encrypted</string>
+    <string name="alert_encrypted_message">Your device is already encrypted</string>
+
+    <!-- Toasts -->
+    <string name="toast_successful_connection_deletion">Successfully deleted connection</string>
+    <string name="toast_failed_connection_deletion">There was a problem trying to delete saved connection</string>
+    <string name="toast_successful_encryption">Device has been encrypted successfully!</string>
+    <string name="toast_failed_encryption">You cancelled the encryption wizard or something went wrong!</string>
+    <string name="toast_enabled_secured_wifi">Device will now only connect to secured WiFis. Your device will be disconnected from unsecured WiFis!</string>
+    <string name="toast_disabled_secured_wifi">Device can now connect to unsecured WiFis!</string>
+    <string name="toast_disabled_cameras_message">All cameras in the device have been disabled!</string>
+    <string name="toast_enabled_cameras_message">All cameras in the device has been enabled!</string>
+    <string name="toast_wifi_disabled_message">Please enabled WiFi to display the saved connections!</string>
+
+    <!-- Recommendation Messages-->
+    <string name="recommendation_unsecured_connection_active">&#x2717; Device is able to connect to unsecured WiFi connections.
+        For security, it is recommended that you disable connection to WiFi connections that are not secured!</string>
+    <string name="recommendation_unsecured_connection_inactive">&#x2713; Great! Device does not allow establishing connection with unsecured WiFis.</string>
+    <string name="recommendation_cameras_active">&#x2717; Cameras are active. For increased security, we recommend disabling all cameras on a system level.</string>
+    <string name="recommendation_cameras_inactive">&#x2713; Good! All cameras have been disabled.</string>
+    <string name="recommendation_unknownsource_active">&#x2717; The device is able to install apps from unknown sources. It is highly recommended that
+    you disable this setting. This app is unable to change this setting, the user will need to go to the device settings/security to change
+    this value.</string>
+    <string name="recommendation_unknownsource_inactive">&#x2713; Great! Device does not allow apps from unknown sources to be installed.</string>
+    <string name="recommendation_encryption_active">&#x2713; Good news! Your device storage is encrypted.</string>
+    <string name="recommendation_encryption_inactive">&#x2717; The device storage is unencrypted. We recommend encrypting the device to ensure that your data secured.</string>
+    <string name="recommendation_encryption_unsupported">&#x2717; Your device storage is unencrypted. Unfortunately, your system does not support encryption.</string>
+    <string name="recommendation_encryption_noinformation">&#x2717; Unable to get information about the encryption state</string>
+</resources>
